@@ -1,6 +1,6 @@
 development:
   adapter: postgresql
   database: fyt
-  username: postgres
+  username: ismarty
   host: localhost
   timeout: 5000
