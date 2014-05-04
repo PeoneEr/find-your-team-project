@@ -6,6 +6,7 @@ group :default do
   gem 'devise'
   gem 'inherited_resources'
   gem 'simple_form'
+  gem 'russian'
 end
 
 group :assets do
