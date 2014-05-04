@@ -7,6 +7,7 @@ group :default do
   gem 'inherited_resources'
   gem 'simple_form'
   gem 'russian'
+  gem 'paperclip'
 end
 
 group :assets do
@@ -16,3 +17,6 @@ group :assets do
   gem 'jquery-rails'
 end
 
+group :development do
+  gem 'annotate'
+end
