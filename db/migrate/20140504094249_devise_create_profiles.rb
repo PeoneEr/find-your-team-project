@@ -18,6 +18,13 @@ class DeviseCreateProfiles < ActiveRecord::Migration
       t.datetime :last_sign_in_at
       t.string   :current_sign_in_ip
       t.string   :last_sign_in_ip
+      t.string :nickname
+      t.string :vk
+      t.string :twitter
+      t.string :fb
+      t.string :skype
+      t.string :steam
+      t.belongs_to :team
 
       ## Confirmable
       # t.string   :confirmation_token
