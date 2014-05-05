@@ -1,2 +1,3 @@
-class ProfileController < ApplicationController
+class ProfilesController < ApplicationController
+  inherit_resources
 end

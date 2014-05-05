@@ -1,2 +1,2 @@
-class TeamController < ApplicationController
+class TeamsController < ApplicationController
 end

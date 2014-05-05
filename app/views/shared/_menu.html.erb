@@ -4,5 +4,11 @@
   <%= link_to "Главная", root_path %>
   <%= link_to "Главная", root_path %>
   <%= link_to "Главная", root_path %>
-  <%= current_profile.email %>
+  <div class="right">
+    <% if profile_signed_in? %>
+      Вы вошли как: <%= link_to current_profile.nickname, profile_path(current_profile.id) %>
+  <% else %>
+    <%= link_to "Войти", new_profile_session_path %>
+  <% end %>
+  </div>
 </div>
