@@ -1,1 +1,20 @@
-<%= params[:controller] %> && <%= params[:action] %>
+<div class="profile_wrapper">
+  <div class="left_side">
+    <div class="avatar">
+      <%= image_tag @profile.avatar.url(:medium) %>
+    </div>
+    <div class="settings">
+      <p><%= link_to "Настройки", settings_profile_path(current_profile.id) %></p>
+    </div>
+  </div>
+  <div class="right_side">
+    <ul>
+        <li>
+          <%= @profile.nickname %>
+        </li>
+        <li>
+          <%= @profile.skype %>
+        </li>
+    </ul>
+  </div>
+</div>
