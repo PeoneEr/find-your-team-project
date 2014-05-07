@@ -1,0 +1,12 @@
+<div class="wrapper">
+  <div class="edit_team-form">
+    <%= simple_form_for @team do |f| %>
+      <%= f.input :title, label: false, placeholder: "Название команды" %>
+      <%= f.input :description, label: false, placeholder: "Краткое опиание", input_html: {rows: 5} %>
+      <%= f.submit "Создать" %>
+    <% end %>
+    <div class="edit_team-links">
+      <%= link_to "Удалить команду", team_path(@team.id), method: :delete, confirm: "Уверены что хотите удалить команду?"  %>
+    </div>
+  </div>
+</div>

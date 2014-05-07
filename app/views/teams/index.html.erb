@@ -1,1 +1,26 @@
-<%= params[:controller] %>
+<div class="wrapper">
+  <div class="new_team-link">
+    <%= link_to "Создать команду", new_team_path %>
+  </div>
+  <% @teams.each do |team| %>
+    <table>
+      <tr>
+        <th colspan=100%><%= link_to team.title, team_path(team.id) %></th>
+      </tr>
+      <tr>
+        <td><%= image_tag 'default_team.jpg',size: '100x100' %></td>
+        <td><%= image_tag 'default_team.jpg',size: '100x100' %></td>
+        <td><%= image_tag 'default_team.jpg',size: '100x100' %></td>
+        <td><%= image_tag 'default_team.jpg',size: '100x100' %></td>
+        <td><%= image_tag 'default_team.jpg',size: '100x100' %></td>
+      </tr>
+      <tr>
+        <td>PlayerNickname</td>
+        <td>PlayerNickname</td>
+        <td>PlayerNickname</td>
+        <td>PlayerNickname</td>
+        <td>PlayerNickname</td>
+      </tr>
+    </table>
+  <% end %>
+</div>
