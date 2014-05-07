@@ -1,5 +1,7 @@
 <div class="menu">
-  <%= link_to "Команды", root_path %>
+  <div class="left">
+    <%= link_to "Команды", root_path %>
+  </div>
   <div class="right">
     <% if profile_signed_in? %>
       Вы вошли как: <%= link_to current_profile.nickname, profile_path(current_profile.id) %>

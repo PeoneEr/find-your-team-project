@@ -4,7 +4,7 @@ class Profile < ActiveRecord::Base
 
   attr_accessible :email, :password, :remember_me, :nickname, :skype, :avatar
 
-  has_attached_file :avatar, :styles => { :medium => "300x300>", :thumb => "100x100>"  }, :default_url => "/images/:style/missing.png"
+  has_attached_file :avatar, :styles => { :medium => "300x300>", :thumb => "100x100>"  }, :default_url => "/images/:style/missing.jpg"
   validates_attachment_content_type :avatar, :content_type => /\Aimage\/.*\Z/
   validates_uniqueness_of :nickname
 

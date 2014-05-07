@@ -3,18 +3,22 @@
     <div class="avatar">
       <%= image_tag @profile.avatar.url(:medium) %>
     </div>
-    <div class="settings">
-      <p><%= link_to "Настройки", settings_profile_path(current_profile.id) %></p>
+    <div class="edit">
+      <p><%= link_to "Настройки", edit_profile_path(current_profile.id) if profile_owner? %></p>
     </div>
   </div>
   <div class="right_side">
-    <ul>
-        <li>
-          <%= @profile.nickname %>
-        </li>
-        <li>
-          <%= @profile.skype %>
-        </li>
+    <h1>Страница пользователя <%= @profile.nickname %> <% if profile_owner? %> (Это Вы) <% end %></h1>
+    <ul
+      <li>
+        Skype: <%= @profile.skype %>
+    </li>
+    <li>
+      vk: <%= @profile.vk %>
+  </li>
+  <li>
+    Steam: <%= @profile.steam %>
+</li>
     </ul>
   </div>
 </div>
