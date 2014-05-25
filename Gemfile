@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 group :default do
-  gem 'rails', '3.2.17'
+  gem 'rails', '3.2.18'
   gem 'pg'
   gem 'devise'
   gem 'inherited_resources'
@@ -20,4 +20,5 @@ end
 
 group :development do
   gem 'annotate'
+  gem 'hirb'
 end
