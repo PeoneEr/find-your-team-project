@@ -1,6 +1,0 @@
-development:
-  adapter: postgresql
-  database: fyt
-  username: postgres
-  host: localhost
-  timeout: 5000
