@@ -1,0 +1,6 @@
+development:
+  adapter: 
+  database: 
+  username: 
+  host: 
+  timeout: 5000
