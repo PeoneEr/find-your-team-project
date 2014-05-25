@@ -2,6 +2,6 @@
 /vendor
 /log/*.log
 /tmp
-/config/database.yml
+config/database.yml
 /test
 /public/system
