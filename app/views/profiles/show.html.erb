@@ -4,7 +4,8 @@
       <%= image_tag @profile.avatar.url(:medium) %>
     </div>
     <div class="edit">
-      <p><%= link_to "Настройки", edit_profile_path(current_profile.id) if profile_owner? %></p>
+      <p><%= link_to "Настройки", edit_profile_path(current_profile.id), class: "button" if profile_owner? %></p>
+      <p><%= link_to "Пригласить в команду", root_path, class: "button" %></p>
     </div>
   </div>
   <div class="right_side">

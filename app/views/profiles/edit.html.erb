@@ -1,6 +1,8 @@
 <%= simple_form_for @profile, :html => {:multipart => true } do |f| %>
-  <%= f.input :nickname %>
-  <%= f.input :skype %>
+  <%= f.input :nickname, label: false, placeholder: "Ник" %>
+  <%= f.input :skype, label: false, placeholder: "Skype" %>
+  <%= f.input :vk, label: false, placeholder: "Страница ВКонтакте" %>
+  <%= f.input :steam, label: false, placeholder: "Ник в Steam" %>
   <%= f.file_field :avatar %>
-  <%= f.submit 'Сохранить изменения' %>
+  <%= f.submit 'Сохранить изменения', class: 'button' %>
 <% end %>
