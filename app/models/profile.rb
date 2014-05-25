@@ -3,7 +3,8 @@ class Profile < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
 
-  attr_accessible :email, :password, :remember_me, :nickname, :skype, :avatar, :vk, :steam
+  attr_accessible :email, :password, :remember_me, :nickname, :skype, :avatar, :vk, :steam,
+                  :info
 
   has_attached_file :avatar, :styles => { :medium => "300x300>", :thumb => "100x100>"  }, :default_url => "/images/:style/missing.jpg"
   validates_attachment_content_type :avatar, :content_type => /\Aimage\/.*\Z/

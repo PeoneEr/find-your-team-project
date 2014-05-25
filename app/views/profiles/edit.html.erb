@@ -1,8 +1,10 @@
 <%= simple_form_for @profile, :html => {:multipart => true } do |f| %>
-  <%= f.input :nickname, label: false, placeholder: "Ник" %>
-  <%= f.input :skype, label: false, placeholder: "Skype" %>
-  <%= f.input :vk, label: false, placeholder: "Страница ВКонтакте" %>
-  <%= f.input :steam, label: false, placeholder: "Ник в Steam" %>
+  <%= f.input :nickname, label: "Ник", placeholder: "Ник" %>
+  <%= f.input :skype, label: "Skype", placeholder: "Skype" %>
+  <%= f.input :vk, label: "Страница ВКонтакте", placeholder: "Страница ВКонтакте" %>
+  <%= f.input :steam, label: "Профиль Steam", placeholder: "Ник в Steam" %>
   <%= f.file_field :avatar %>
+  <%= f.input :info, as: :text, label: "Информация о себе" %>
   <%= f.submit 'Сохранить изменения', class: 'button' %>
+  <!-- TODO: лейблы вынести в отдельную колонку -->
 <% end %>
