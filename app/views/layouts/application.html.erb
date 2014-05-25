@@ -11,6 +11,7 @@
   <div class="content">
     <%= render 'shared/menu' %>
     <div class="body">
+      <%= link_to_function "Назад", "history.back()", class: "button" %>
       <%= yield %>
     </div>
   </div>
